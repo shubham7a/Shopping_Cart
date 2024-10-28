@@ -18,7 +18,7 @@ const Cart = () => {
   const handlesubmit = async () => {
     try {
         const response = await axios.post("http://localhost:4000/send-message", {
-            cart,totalprice
+            cart
         });
     } catch (error) {
         console.error("Error sending message:", error);
